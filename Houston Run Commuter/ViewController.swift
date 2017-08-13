@@ -12,7 +12,7 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +23,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var textField: UITextField!
     
     @IBAction func buttonPush(_ sender: Any) {
+        let busStop : String? = textField.text
         
-        print("woohoo")
+        print("bus stop is \(busStop!)")
         
         
         let config = URLSessionConfiguration.default // Session Configuration
         let session = URLSession(configuration: config) // Load configuration into Session
-        let url = URL(string: "https://api.ridemetro.org/data/Stops('Ho414_4620_2446')/Arrivals?&$format=json&subscription-key=8f5df090e61646659538452c75882d59")!
+        
+        let useThisUrl: String? = "https://api.ridemetro.org/data/Stops('Ho414_4620_" + busStop! + "')/Arrivals?&$format=json&subscription-key=8f5df090e61646659538452c75882d59"
+        let url = URL(string: useThisUrl!)!
         
         let task = session.dataTask(with: url, completionHandler: {
             (data, response, error) in
