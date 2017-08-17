@@ -23,8 +23,78 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBOutlet weak var stopNumber: UILabel!
+    @IBOutlet weak var routeNumber: UILabel!
+    @IBOutlet weak var minToArrival: UILabel!
+    
+    
+    
     @IBOutlet weak var textField: UITextField!
     
+    @IBAction func getOneTime(_ sender: Any) {
+        let busStop : String? = textField.text
+        self.minToArrival.text = "this is it here"
+        
+        let config = URLSessionConfiguration.default // Session Configuration
+        let session = URLSession(configuration: config) // Load configuration into Session
+        
+        let useThisUrl: String? = "https://api.ridemetro.org/data/Stops('Ho414_4620_" + busStop! + "')/Arrivals?&$format=json&subscription-key=8f5df090e61646659538452c75882d59"
+        
+        let url = URL(string: useThisUrl!)!
+        
+        let task = session.dataTask(with: url, completionHandler: {
+            (data, response, error) in
+            
+            if error != nil {
+                
+                print(error!.localizedDescription)
+                
+            } else {
+                
+                do {
+                    
+                    if let jsonfred = try JSONSerialization.jsonObject(with: data!) as? [String: Any]{
+                        
+                        if let d = jsonfred["d"] as? [String: Any] {
+                        if let results = d["results"] as? [[String: Any]] {
+                            
+                            for result in results {
+                                
+                                if let arrivalTime = result["LocalArrivalTime"] as? String {
+                                    
+                                    if let number = Double(arrivalTime.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) {
+                                        let arTime = trunc(number/1000)
+                                        print("the arTime is \(arTime)")
+                                        
+                                        let timezoneAdjust: Double = -5
+                                        
+                                        
+                                        let arrival = Date(timeIntervalSince1970: TimeInterval(Double(arTime)))
+                                        print("arrival time is \(arrival)")
+                                        
+                                        let now = trunc(Date().timeIntervalSince1970 + timezoneAdjust*60*60)
+                                        
+                                        
+                                        let diff = trunc((arTime - now)/60)
+                                        let diffAsString =  "\(diff)"
+                                        self.minToArrival.text = "this is it"
+                                    }
+                                }
+                            }
+                            }
+                        }
+                        
+                    }
+                } catch {
+                    print("error in JSONSerialization")
+                }
+            }
+        })
+        task.resume()
+        
+    }
     @IBAction func buttonPush(_ sender: Any) {
         let busStop : String? = textField.text
         
@@ -35,6 +105,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let session = URLSession(configuration: config) // Load configuration into Session
         
         let useThisUrl: String? = "https://api.ridemetro.org/data/Stops('Ho414_4620_" + busStop! + "')/Arrivals?&$format=json&subscription-key=8f5df090e61646659538452c75882d59"
+        print("*****************************")
+        print(useThisUrl!)
+        print("*****************************")
+        
         let url = URL(string: useThisUrl!)!
         
         let task = session.dataTask(with: url, completionHandler: {
@@ -74,6 +148,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                             
                                             var diff = trunc((arTime - now)/60)
                                             print("minutes until arrival is \(diff)")
+                                            print("*****************************")
+                                            
+                                            self.minToArrival.text = String(diff)
                                             
                                             
                                         }
@@ -97,6 +174,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         task.resume()
         
     }
+    
+    
+    
 }
 
 
