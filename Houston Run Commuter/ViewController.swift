@@ -1,24 +1,21 @@
-//
-//  ViewController.swift
-//  Houston Run Commuter
-//
-//  Created by Bon Crowder on 8/10/17.
-//  Copyright © 2017 Bon Crowder. All rights reserved.
-//
-
 import UIKit
-
-
-
-
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        stopNumber.text = "shak"
+        stopNumber.text = ""
         minToArrival.text = ""
+        routeNumber.text = ""
+        
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        let result = formatter.string(from: date)
+        currentTime.text = result
+
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -30,10 +27,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var minToArrival: UILabel!
     @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet weak var currentTime: UILabel!
+    @IBOutlet weak var currentTimeNotDate: UILabel!
     
     @IBAction func buttonPush(_ sender: Any) {
         let busStop : String? = textField.text
-        stopNumber.text = "shakamakacoocoo"
+//        stopNumber.text = ""
+//        routeNumber.text = ""
         
         print("bus stop is \(busStop!)")
         
@@ -65,8 +65,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             
                             if let results = d["results"] as? [[String: Any]] {
                                 
+                                
+                                
                                 for result in results {
                                     
+                                    if let busRoute = result["RouteName"] as? String {
                                     if let arrivalTime = result["LocalArrivalTime"] as? String {
                                         
                                         if let number = Double(arrivalTime.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) {
@@ -87,13 +90,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                             print("minutes until arrival is \(diff)")
                                             print("*****************************")
                                             
-                                            self.stopNumber.text = self.stopNumber.text! + "\n" + self.textField.text!
+                                            
+
+                                            
                                             DispatchQueue.main.async {
-                                                self.minToArrival.text = self.minToArrival.text! + "\n" + String(diff)
+                                                
+                                                self.stopNumber.text = self.stopNumber.text! + self.textField.text! + "\n"
+                                               
+                                                self.routeNumber.text = self.routeNumber.text! + busRoute + "\n"
+                                                
+                                                 self.minToArrival.text = self.minToArrival.text! + String(diff) + "\n"
                                             }
                                             
+                                            let date = Date()
+                                            let formatter = DateFormatter()
+                                            formatter.dateFormat = "h:mm a"
+                                            let result = formatter.string(from: date)
+                                            self.currentTimeNotDate.text = result
                                             
-                                            
+                                        }
+                                        
                                         }
                                     }
                                 }
