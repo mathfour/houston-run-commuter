@@ -32,9 +32,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func buttonPush(_ sender: Any) {
         let busStop : String? = textField.text
-//        stopNumber.text = ""
-//        routeNumber.text = ""
-        
+
+        stopNumber.text = ""
+        minToArrival.text = ""
+        routeNumber.text = ""
         print("bus stop is \(busStop!)")
         
         
