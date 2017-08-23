@@ -89,8 +89,8 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
 //    let currentLatStr = String(describing: currentCoordinate?.latitude)
 //    let currentLongStr = String(describing: currentCoordinate?.longitude)
     
-    let currentLatStr: String! = "\(currentLatNum! ?? 29.763)"
-    let currentLongStr: String! = "\(currentLongNum! ?? -95.363)"
+    let currentLatStr: String! = "\(currentLatNum ?? 29.763)"
+    let currentLongStr: String! = "\(currentLongNum ?? -95.363)"
 
     
 //    let currentLat : String = "29.763"
@@ -98,7 +98,7 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
 //    
 //    let useThisUrlToGetStopCodes: String? = "https://houstonmetro.azure-api.net/data/GeoAreas('\(currentLatStr.description)|\(currentLongStr.description)|0.5')/Stops?$format=json&subscription-key=8f5df090e61646659538452c75882d59"
     
-    let useThisUrlToGetStopCodes: String? = "https://houstonmetro.azure-api.net/data/GeoAreas('\(currentLatStr)%7C\(currentLongStr)%7C0.25')/Stops?$format=json&subscription-key=8f5df090e61646659538452c75882d59"
+    let useThisUrlToGetStopCodes: String? = "https://houstonmetro.azure-api.net/data/GeoAreas('\(currentLatStr.description)%7C\(currentLongStr.description)%7C0.25')/Stops?$format=json&subscription-key=8f5df090e61646659538452c75882d59"
 
     print("*****************************")
     print("getting bus stop number: ", useThisUrlToGetStopCodes!)
