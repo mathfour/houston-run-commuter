@@ -140,13 +140,8 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="0Pj-Pu-cAk" secondAttribute="bottom" constant="-393" id="2Am-Sx-zlz"/>
                                     <constraint firstItem="0Pj-Pu-cAk" firstAttribute="top" secondItem="xTq-u2-woF" secondAttribute="top" id="2R7-Oo-qbR"/>
-                                    <constraint firstAttribute="bottom" secondItem="0Pj-Pu-cAk" secondAttribute="bottom" constant="-393" id="2db-Dm-fL7"/>
-                                    <constraint firstAttribute="trailing" secondItem="0Pj-Pu-cAk" secondAttribute="trailing" id="72w-yl-bO9"/>
                                     <constraint firstAttribute="trailing" secondItem="0Pj-Pu-cAk" secondAttribute="trailing" id="SyG-KT-XBp"/>
-                                    <constraint firstItem="0Pj-Pu-cAk" firstAttribute="leading" secondItem="xTq-u2-woF" secondAttribute="leading" id="ZKc-rP-sMM"/>
-                                    <constraint firstItem="0Pj-Pu-cAk" firstAttribute="top" secondItem="xTq-u2-woF" secondAttribute="top" id="gyb-5o-k0P"/>
                                     <constraint firstItem="0Pj-Pu-cAk" firstAttribute="leading" secondItem="xTq-u2-woF" secondAttribute="leading" id="qIT-29-JF6"/>
-                                    <constraint firstAttribute="bottom" secondItem="0Pj-Pu-cAk" secondAttribute="bottom" constant="-393" id="uFB-uQ-La0"/>
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="current date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgF-yB-MXL">

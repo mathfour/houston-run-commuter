@@ -14,6 +14,7 @@
 		4361CE811F3D4E590052D686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4361CE7F1F3D4E590052D686 /* LaunchScreen.storyboard */; };
 		4361CE8C1F3D4E590052D686 /* Houston_Run_CommuterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361CE8B1F3D4E590052D686 /* Houston_Run_CommuterTests.swift */; };
 		4361CE971F3D4E590052D686 /* Houston_Run_CommuterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361CE961F3D4E590052D686 /* Houston_Run_CommuterUITests.swift */; };
+		4361CEA61F4B91310052D686 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4361CEA51F4B91310052D686 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4361CE921F3D4E590052D686 /* Houston Run CommuterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Houston Run CommuterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4361CE961F3D4E590052D686 /* Houston_Run_CommuterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houston_Run_CommuterUITests.swift; sourceTree = "<group>"; };
 		4361CE981F3D4E590052D686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4361CEA51F4B91310052D686 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4361CEA61F4B91310052D686 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				4361CE8A1F3D4E590052D686 /* Houston Run CommuterTests */,
 				4361CE951F3D4E590052D686 /* Houston Run CommuterUITests */,
 				4361CE741F3D4E590052D686 /* Products */,
+				4361CEA41F4B91310052D686 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				4361CE981F3D4E590052D686 /* Info.plist */,
 			);
 			path = "Houston Run CommuterUITests";
+			sourceTree = "<group>";
+		};
+		4361CEA41F4B91310052D686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4361CEA51F4B91310052D686 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
