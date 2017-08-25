@@ -149,7 +149,7 @@
                                 <rect key="frame" x="-1" y="956" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <barButtonItem title="Get Info for a Bus Stop" width="372" id="b6c-LD-4Tk">
+                                    <barButtonItem title="Get Info for a Bus Stop" width="380" id="b6c-LD-4Tk">
                                         <connections>
                                             <segue destination="mC1-nf-0eF" kind="show" id="kgV-Ag-Iub"/>
                                         </connections>
@@ -341,7 +341,7 @@
                                 <rect key="frame" x="0.0" y="956" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <barButtonItem title="Get Info Where I Am" width="382" id="TUg-Jf-hS0">
+                                    <barButtonItem title="Get Info Where I Am" width="380" id="TUg-Jf-hS0">
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="r3X-Mj-xhV"/>
                                         </connections>
