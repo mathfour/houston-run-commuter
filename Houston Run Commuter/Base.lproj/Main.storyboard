@@ -98,7 +98,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="245" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2r-Dj-Jmz">
-                                                <rect key="frame" x="82" y="8" width="50" height="20.5"/>
+                                                <rect key="frame" x="82" y="10" width="50" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="WpD-sA-tXh"/>
                                                 </constraints>
@@ -107,7 +107,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="244" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHV-H1-f9F">
-                                                <rect key="frame" x="282" y="8" width="50" height="20.5"/>
+                                                <rect key="frame" x="282" y="10" width="50" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="uzR-c9-lLX"/>
                                                 </constraints>
@@ -116,7 +116,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foW-KX-qZJ">
-                                                <rect key="frame" x="181" y="8" width="50" height="20.5"/>
+                                                <rect key="frame" x="182" y="10" width="50" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="3dw-o9-fNf"/>
                                                 </constraints>
@@ -129,11 +129,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1000" id="C7k-oT-Gn0"/>
                                             <constraint firstItem="P2r-Dj-Jmz" firstAttribute="baseline" secondItem="foW-KX-qZJ" secondAttribute="baseline" id="E5O-cH-WtD"/>
-                                            <constraint firstItem="P2r-Dj-Jmz" firstAttribute="top" secondItem="0Pj-Pu-cAk" secondAttribute="top" constant="8" id="I7c-ON-BjP"/>
+                                            <constraint firstItem="P2r-Dj-Jmz" firstAttribute="top" secondItem="0Pj-Pu-cAk" secondAttribute="top" constant="10" id="I7c-ON-BjP"/>
                                             <constraint firstItem="foW-KX-qZJ" firstAttribute="baseline" secondItem="AHV-H1-f9F" secondAttribute="baseline" id="Otf-uw-Y75"/>
-                                            <constraint firstItem="P2r-Dj-Jmz" firstAttribute="leading" secondItem="0Pj-Pu-cAk" secondAttribute="leading" constant="82" id="dxu-2s-XfV"/>
-                                            <constraint firstItem="foW-KX-qZJ" firstAttribute="leading" secondItem="P2r-Dj-Jmz" secondAttribute="trailing" constant="49" id="n9S-yi-vLP"/>
-                                            <constraint firstItem="AHV-H1-f9F" firstAttribute="leading" secondItem="foW-KX-qZJ" secondAttribute="trailing" constant="51" id="tUk-rD-nGp"/>
+                                            <constraint firstItem="foW-KX-qZJ" firstAttribute="centerX" secondItem="0Pj-Pu-cAk" secondAttribute="centerX" id="Y0F-Mk-F5N"/>
+                                            <constraint firstItem="foW-KX-qZJ" firstAttribute="leading" secondItem="P2r-Dj-Jmz" secondAttribute="trailing" constant="50" id="n9S-yi-vLP"/>
+                                            <constraint firstItem="AHV-H1-f9F" firstAttribute="leading" secondItem="foW-KX-qZJ" secondAttribute="trailing" constant="50" id="tUk-rD-nGp"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -153,6 +153,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ob-sC-7cR">
+                                <rect key="frame" x="345" y="28" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshLatLong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNm-ao-6j9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

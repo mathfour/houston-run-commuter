@@ -44,9 +44,9 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
   @IBOutlet weak var currentTime: UILabel!
   @IBOutlet weak var currentTimeNotDate: UILabel!
   
-  
-  
-  
+  @IBAction func refreshLatLong(_ sender: UIButton) {
+    manager.startUpdatingLocation()
+  }
   
   
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -81,35 +81,48 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
     let config = URLSessionConfiguration.default // Session Configuration
     let session = URLSession(configuration: config) // Load configuration into Session
     
+//    Add back in for production
+//    let currentLatNum = currentCoordinate?.latitude
+//    let currentLongNum = currentCoordinate?.longitude
     
-            let currentLatNum = currentCoordinate?.latitude
-            let currentLongNum = currentCoordinate?.longitude
+    let latHoustonConversion = (arc4random_uniform(10)+796)
+    let longHoustonConversion = (arc4random_uniform(20)+2695)
     
     
-//    let currentLatStr = String(describing: currentCoordinate?.latitude)
-//    let currentLongStr = String(describing: currentCoordinate?.longitude)
+    let cupertinoLat = currentCoordinate?.latitude
+    let cupertinoLong = currentCoordinate?.longitude
     
-    let currentLatStr: String! = "\(currentLatNum ?? 29.763)"
-    let currentLongStr: String! = "\(currentLongNum ?? -95.363)"
+    let houstonRandomLat: Double = cupertinoLat! - Double(latHoustonConversion)/100
+    let houstonRandomLong: Double = cupertinoLong! + Double(longHoustonConversion)/100
+    
+    let currentLatNum = houstonRandomLat
+    let currentLongNum = houstonRandomLong
+    
+    print(currentLatNum, ", ",currentLongNum)
 
     
-//    let currentLat : String = "29.763"
-//    let currentLong: String = "-95.363"
-//    
-//    let useThisUrlToGetStopCodes: String? = "https://houstonmetro.azure-api.net/data/GeoAreas('\(currentLatStr.description)|\(currentLongStr.description)|0.5')/Stops?$format=json&subscription-key=8f5df090e61646659538452c75882d59"
+    
+    //    let currentLatStr = String(describing: currentCoordinate?.latitude)
+    //    let currentLongStr = String(describing: currentCoordinate?.longitude)
+    
+    let currentLatStr: String! = "\(currentLatNum)"
+    let currentLongStr: String! = "\(currentLongNum)"
+    
+    
+    //    let currentLat : String = "29.763"
+    //    let currentLong: String = "-95.363"
+    //
+    //    let useThisUrlToGetStopCodes: String? = "https://houstonmetro.azure-api.net/data/GeoAreas('\(currentLatStr.description)|\(currentLongStr.description)|0.5')/Stops?$format=json&subscription-key=8f5df090e61646659538452c75882d59"
     
     let useThisUrlToGetStopCodes: String? = "https://houstonmetro.azure-api.net/data/GeoAreas('\(currentLatStr.description)%7C\(currentLongStr.description)%7C0.25')/Stops?$format=json&subscription-key=8f5df090e61646659538452c75882d59"
-
+    
     print("*****************************")
-    print("getting bus stop number: ", useThisUrlToGetStopCodes!)
+    print("getting bus stop number: \n", useThisUrlToGetStopCodes!)
     print("*****************************")
     
-//    let urlForStops: URL!
-
     
     let urlForStops = URL(string: useThisUrlToGetStopCodes!)!
-
-
+    
     
     let task = session.dataTask(with: urlForStops, completionHandler: {
       (data, response, error) in
@@ -129,14 +142,13 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
               if let results = d["results"] as? [[String: Any]] {
                 
                 
-                
                 for result in results {
                   
                   if let stopCode = result["StopCode"] as? String {
                     
                     print("stopCode is", stopCode)
-
-    
+                    
+                    
                     let useThisUrl: String? = "https://api.ridemetro.org/data/Stops('Ho414_4620_\(stopCode)')/Arrivals?&$format=json&subscription-key=8f5df090e61646659538452c75882d59"
                     print("*****************************")
                     print("this is the url for the routes and arrival times: " , useThisUrl!)
@@ -184,19 +196,19 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
                                         print("minutes until arrival is \(diff)")
                                         print("*****************************")
                                         
-
-                                        let busStop : String? = self.textField.text
                                         
-                                        self.stopNumber.text = ""
-                                        self.minToArrival.text = ""
-                                        self.routeNumber.text = ""
+//                                        let busStop : String? = self.textField.text
+//                                        
+//                                        self.stopNumber.text = ""
+//                                        self.minToArrival.text = ""
+//                                        self.routeNumber.text = ""
                                         //                                                                                print("bus stop is \(busStop!)")
                                         
                                         
                                         
                                         DispatchQueue.main.async {
                                           
-                                          self.stopNumber.text = self.stopNumber.text! + self.textField.text! + "\n"
+                                          self.stopNumber.text = self.stopNumber.text! + stopCode + "\n"
                                           
                                           self.routeNumber.text = self.routeNumber.text! + busRoute + "\n"
                                           
@@ -233,7 +245,7 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
                     
                   }
                 }
-
+                
               }
             }
           }
