@@ -15,6 +15,7 @@
 		4361CE8C1F3D4E590052D686 /* Houston_Run_CommuterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361CE8B1F3D4E590052D686 /* Houston_Run_CommuterTests.swift */; };
 		4361CE971F3D4E590052D686 /* Houston_Run_CommuterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361CE961F3D4E590052D686 /* Houston_Run_CommuterUITests.swift */; };
 		4361CEA61F4B91310052D686 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4361CEA51F4B91310052D686 /* CoreLocation.framework */; };
+		43FD0A4C1F504D6100428B44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 43FD0A4B1F504D6100428B44 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4361CE961F3D4E590052D686 /* Houston_Run_CommuterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houston_Run_CommuterUITests.swift; sourceTree = "<group>"; };
 		4361CE981F3D4E590052D686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4361CEA51F4B91310052D686 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		43FD0A4B1F504D6100428B44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		4361CE6A1F3D4E590052D686 = {
 			isa = PBXGroup;
 			children = (
+				43FD0A4B1F504D6100428B44 /* README.md */,
 				4361CE751F3D4E590052D686 /* Houston Run Commuter */,
 				4361CE8A1F3D4E590052D686 /* Houston Run CommuterTests */,
 				4361CE951F3D4E590052D686 /* Houston Run CommuterUITests */,
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FD0A4C1F504D6100428B44 /* README.md in Sources */,
 				4361CE791F3D4E590052D686 /* ViewController.swift in Sources */,
 				4361CE771F3D4E590052D686 /* AppDelegate.swift in Sources */,
 			);
@@ -528,6 +532,7 @@
 				4361CE9D1F3D4E590052D686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4361CE9E1F3D4E590052D686 /* Build configuration list for PBXNativeTarget "Houston Run CommuterTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +541,7 @@
 				4361CEA01F3D4E590052D686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4361CEA11F3D4E590052D686 /* Build configuration list for PBXNativeTarget "Houston Run CommuterUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +550,7 @@
 				4361CEA31F3D4E590052D686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
