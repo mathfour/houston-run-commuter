@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Houston Run Commuter.xcodeproj">
+      location = "self:/Users/boncrowder/dev/Houston Run Commuter/Run Commuter Houston.xcodeproj">
    </FileRef>
 </Workspace>

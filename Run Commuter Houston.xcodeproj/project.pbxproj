@@ -16,6 +16,7 @@
 		4361CE971F3D4E590052D686 /* Houston_Run_CommuterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361CE961F3D4E590052D686 /* Houston_Run_CommuterUITests.swift */; };
 		4361CEA61F4B91310052D686 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4361CEA51F4B91310052D686 /* CoreLocation.framework */; };
 		43FD0A4C1F504D6100428B44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 43FD0A4B1F504D6100428B44 /* README.md */; };
+		43FD0A4E1F51A85800428B44 /* NiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FD0A4D1F51A85800428B44 /* NiceButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4361CE981F3D4E590052D686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4361CEA51F4B91310052D686 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		43FD0A4B1F504D6100428B44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		43FD0A4D1F51A85800428B44 /* NiceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		4361CE6A1F3D4E590052D686 = {
 			isa = PBXGroup;
 			children = (
+				43FD0A4D1F51A85800428B44 /* NiceButton.swift */,
 				43FD0A4B1F504D6100428B44 /* README.md */,
 				4361CE751F3D4E590052D686 /* Houston Run Commuter */,
 				4361CE8A1F3D4E590052D686 /* Houston Run CommuterTests */,
@@ -225,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4361CE6E1F3D4E590052D686 /* Build configuration list for PBXProject "Houston Run Commuter" */;
+			buildConfigurationList = 4361CE6E1F3D4E590052D686 /* Build configuration list for PBXProject "Run Commuter Houston" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -279,6 +282,7 @@
 			files = (
 				43FD0A4C1F504D6100428B44 /* README.md in Sources */,
 				4361CE791F3D4E590052D686 /* ViewController.swift in Sources */,
+				43FD0A4E1F51A85800428B44 /* NiceButton.swift in Sources */,
 				4361CE771F3D4E590052D686 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,7 +520,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4361CE6E1F3D4E590052D686 /* Build configuration list for PBXProject "Houston Run Commuter" */ = {
+		4361CE6E1F3D4E590052D686 /* Build configuration list for PBXProject "Run Commuter Houston" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4361CE991F3D4E590052D686 /* Debug */,

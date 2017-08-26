@@ -3,14 +3,17 @@ import CoreLocation
 import MapKit
 import CoreLocation
 
+
 class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDelegate {
   
   private var currentCoordinate: CLLocationCoordinate2D?
   let manager = CLLocationManager()
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
     stopNumber.text = ""
     minToArrival.text = ""
     routeNumber.text = ""
@@ -30,6 +33,9 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
     //        locationManager?.delegate = self
     
     
+    
+    
+    
   }
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -45,6 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
   
   @IBAction func refreshLatLong(_ sender: UIButton) {
     manager.startUpdatingLocation()
+    
   }
   
   

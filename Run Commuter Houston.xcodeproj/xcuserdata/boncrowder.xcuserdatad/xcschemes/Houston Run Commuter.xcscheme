@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4361CE721F3D4E590052D686"
                BuildableName = "Houston Run Commuter.app"
                BlueprintName = "Houston Run Commuter"
-               ReferencedContainer = "container:Houston Run Commuter.xcodeproj">
+               ReferencedContainer = "container:Run Commuter Houston.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "4361CE861F3D4E590052D686"
                BuildableName = "Houston Run CommuterTests.xctest"
                BlueprintName = "Houston Run CommuterTests"
-               ReferencedContainer = "container:Houston Run Commuter.xcodeproj">
+               ReferencedContainer = "container:Run Commuter Houston.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "4361CE911F3D4E590052D686"
                BuildableName = "Houston Run CommuterUITests.xctest"
                BlueprintName = "Houston Run CommuterUITests"
-               ReferencedContainer = "container:Houston Run Commuter.xcodeproj">
+               ReferencedContainer = "container:Run Commuter Houston.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "4361CE721F3D4E590052D686"
             BuildableName = "Houston Run Commuter.app"
             BlueprintName = "Houston Run Commuter"
-            ReferencedContainer = "container:Houston Run Commuter.xcodeproj">
+            ReferencedContainer = "container:Run Commuter Houston.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "4361CE721F3D4E590052D686"
             BuildableName = "Houston Run Commuter.app"
             BlueprintName = "Houston Run Commuter"
-            ReferencedContainer = "container:Houston Run Commuter.xcodeproj">
+            ReferencedContainer = "container:Run Commuter Houston.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "4361CE721F3D4E590052D686"
             BuildableName = "Houston Run Commuter.app"
             BlueprintName = "Houston Run Commuter"
-            ReferencedContainer = "container:Houston Run Commuter.xcodeproj">
+            ReferencedContainer = "container:Run Commuter Houston.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
