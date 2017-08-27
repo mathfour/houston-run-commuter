@@ -10,9 +10,12 @@ Run commuting is gaining in popularity. But the limiting factors of running to w
 
 ![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
 
+
+
+
 #### Demo (Video)
 
-[![Alt text](https://img.youtube.com/vi/LXt46q2vrGY/0.jpg)](https://www.youtube.com/watch?v=VID)
+[![Alt text](https://img.youtube.com/vi/LXt46q2vrGY/0.jpg)](https://www.youtube.com/watch?v=LXt46q2vrGY)
 
 
 #### App Stores
