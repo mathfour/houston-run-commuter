@@ -10,6 +10,11 @@ Run commuting is gaining in popularity. But the limiting factors of running to w
 
 ![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
 
+(https://github.com/mathfour/houston-run-commuter/blob/master/Houston%20Run%20Commuter/Assets.xcassets/RCLaunch.imageset/RCLaunch.png?raw=true)
+
+(https://github.com/mathfour/houston-run-commuter/blob/master/Houston%20Run%20Commuter/Assets.xcassets/RCEx01.imageset/RCEx01.png?raw=true)
+
+(https://github.com/mathfour/houston-run-commuter/blob/master/Houston%20Run%20Commuter/Assets.xcassets/RCEx002.imageset/RCEx002.png?raw=true)
 
 
 
@@ -38,11 +43,10 @@ Coming soon!
 * Graphic Design by Bon Crowder
 
 
-### Libraries
-* see [LIBRARIES](https://github.com/username/appname/blob/master/LIBRARIES.md) files
+### Make it Run...
+I'm working on getting it to run on Appetize.io but am not yet successful with that(https://appetize.io/app/9m3bhtgbwgfwvupdwvgw6qpcfc?device=iphone6s&scale=75&orientation=portrait&osVersion=9.2)
 
-## Permissions
-* Any permissions needed by the app
+I suggest cloning this repo to a mac with Xcode and run the app in the simulator. If you have difficulty, please reach out to me at 713-557-8048.
 
 ## License 
 * BK License (Be Kind)
