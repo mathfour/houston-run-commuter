@@ -1,6 +1,10 @@
 Run Commuter Houston
 ======
-**Run Commuter Houston** is an app for runners in Houston who have to supplement thier trip with the bus.
+**Run Commuter Houston** is an app for runners in Houston who have to supplement thier trip with the bus. 
+
+Run commuting is gaining in popularity. But the limiting factors of running to work include traveling longer distances than is reasonable to run. Taking the bus is a great way around this. 
+
+**Run Commuter Houston** is a mobile iOS app built in Swift 3 that allows commuters to get information on the bus stops closest to them. 
 
 #### Screenshot
 
@@ -20,10 +24,10 @@ Run Commuter Houston
 
 ## Tests
 #### Works on
-* Devices it works with
+* iOS Devices that support geolocation
 
 #### Does not work on
-* Devices it doesn't work with
+* Devices it doesn't work with non-iOS devices
 
 ## Contributors
 ### Artwork
