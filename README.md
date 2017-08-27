@@ -10,11 +10,11 @@ Run commuting is gaining in popularity. But the limiting factors of running to w
 
 ![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
 
-(https://github.com/mathfour/houston-run-commuter/blob/master/Houston%20Run%20Commuter/Assets.xcassets/RCLaunch.imageset/RCLaunch.png?raw=true)
+![Launch Screen](/Houston%20Run%20Commuter/Assets.xcassets/RCLaunch.imageset/RCLaunch.png)
 
-(https://github.com/mathfour/houston-run-commuter/blob/master/Houston%20Run%20Commuter/Assets.xcassets/RCEx01.imageset/RCEx01.png?raw=true)
+![First Screen](/Assets.xcassets/RCEx01.imageset/RCEx01.png)
 
-(https://github.com/mathfour/houston-run-commuter/blob/master/Houston%20Run%20Commuter/Assets.xcassets/RCEx002.imageset/RCEx002.png?raw=true)
+![Second Screen](/Houston%20Run%20Commuter/Assets.xcassets/RCEx002.imageset/RCEx002.png)
 
 
 
