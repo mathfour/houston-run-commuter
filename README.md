@@ -23,8 +23,7 @@ Run commuting is gaining in popularity. But the limiting factors of running to w
 
 Coming soon!
 
-![App Store Logo](/Houston%20Run%20Commuter/Assets.xcassets/Available_on_the_App_Store_(black).xcassets/Available_on_the_App_Store_(black).png)
-
+![App Store Logo](/Houston%20Run%20Commuter/Assets.xcassets/Available_on_the_App_Store_(black).imageset/Available_on_the_App_Store_(black).png)
 
 ## Tests
 #### Works on
