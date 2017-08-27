@@ -10,11 +10,7 @@ Run commuting is gaining in popularity. But the limiting factors of running to w
 
 ![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
 
-![Launch Screen](/Houston%20Run%20Commuter/Assets.xcassets/RCLaunch.imageset/RCLaunch.png)
-
-![First Screen](/Assets.xcassets/RCEx01.imageset/RCEx01.png)
-
-![Second Screen](/Houston%20Run%20Commuter/Assets.xcassets/RCEx002.imageset/RCEx002.png)
+![Launch Screen](/Houston%20Run%20Commuter/Assets.xcassets/RCLaunch.imageset/RCLaunch.png) ![First Screen](/Houston%20Run%20Commuter/Assets.xcassets/RCEx01.imageset/RCEx01.png) ![Second Screen](/Houston%20Run%20Commuter/Assets.xcassets/RCEx002.imageset/RCEx002.png)
 
 
 
@@ -25,28 +21,22 @@ Run commuting is gaining in popularity. But the limiting factors of running to w
 
 #### App Stores
 
-
-<!-- edit this image location -->
 Coming soon!
-(https://itunes.apple.com/app/id123456)
+
+![App Store Logo](/Houston%20Run%20Commuter/Assets.xcassets/Available_on_the_App_Store_(black).xcassets/Available_on_the_App_Store_(black).png)
+
 
 ## Tests
 #### Works on
 * iOS Devices that support geolocation
 
 #### Does not work on
-* Doesn't work with non-iOS devices
+* Doesn't work with non-iOS devices or iPads
 
 ## Contributors
 ### Artwork
 * Vector sketches purchased from DepositPhotos.com
 * Graphic Design by Bon Crowder
-
-
-### Make it Run...
-I'm working on getting it to run on Appetize.io but am not yet successful with that(https://appetize.io/app/9m3bhtgbwgfwvupdwvgw6qpcfc?device=iphone6s&scale=75&orientation=portrait&osVersion=9.2)
-
-I suggest cloning this repo to a mac with Xcode and run the app in the simulator. If you have difficulty, please reach out to me at 713-557-8048.
 
 ## License 
 * BK License (Be Kind)
@@ -55,7 +45,9 @@ I suggest cloning this repo to a mac with Xcode and run the app in the simulator
 * Version 1.0
 
 ## How-to use this code
-* see [INSTRUCTIONS](https://github.com/username/appname/blob/master/INSTRUCTIONS.md) file
+I'm working on getting it to run on [Appetize.io](https://appetize.io/app/9m3bhtgbwgfwvupdwvgw6qpcfc?device=iphone6s&scale=75&orientation=portrait&osVersion=9.2) but am not yet successful with that.
+
+I suggest cloning this repo to a mac with Xcode and run the app in the simulator. If you have difficulty, please reach out to me at 713-557-8048.
 
 ## Contact
 #### Bon Crowder
