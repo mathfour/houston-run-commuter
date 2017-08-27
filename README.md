@@ -6,59 +6,53 @@ Run commuting is gaining in popularity. But the limiting factors of running to w
 
 **Run Commuter Houston** is a mobile iOS app built in Swift 3 that allows commuters to get information on the bus stops closest to them. 
 
-#### Screenshot
+#### Screenshots
 
 ![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
 
+#### Demo (Video)
+
+[![Alt text](https://img.youtube.com/vi/LXt46q2vrGY/0.jpg)](https://www.youtube.com/watch?v=VID)
+
+
 #### App Stores
-<!-- edit this image location -->
-[![Get it on Google Play](https://raw.github.com/repat/README-template/master/googleplay.png)](https://play.google.com/store/apps/details?id=com.package.path)
+
 
 <!-- edit this image location -->
-[![Download on the AppStore](https://raw.github.com/repat/README-template/master/appstore.png)](https://itunes.apple.com/app/id123456)
-
-#### QR Market Links
-![QR-Code Android](http://url/qrcode-appname-android.png)
-
-![QR-Code iOS](http://url/qrcode-appname-ios.png)
+Coming soon!
+(https://itunes.apple.com/app/id123456)
 
 ## Tests
 #### Works on
 * iOS Devices that support geolocation
 
 #### Does not work on
-* Devices it doesn't work with non-iOS devices
+* Doesn't work with non-iOS devices
 
 ## Contributors
 ### Artwork
-* Any credit to artists(music,images,...)
+* Vector sketches purchased from DepositPhotos.com
+* Graphic Design by Bon Crowder
 
-### Contributors on GitHub
-* [Contributors](https://github.com/username/appname/graphs/contributors)
 
-### Translations
-* [Transifex](https://www.transifex.com/projects/p/appname/)
-
-### Third party libraries
+### Libraries
 * see [LIBRARIES](https://github.com/username/appname/blob/master/LIBRARIES.md) files
 
 ## Permissions
 * Any permissions needed by the app
 
 ## License 
-* see [LICENSE](https://github.com/username/appname/blob/master/LICENSE.md) file
+* BK License (Be Kind)
 
 ## Version 
-* Version X.Y
+* Version 1.0
 
 ## How-to use this code
 * see [INSTRUCTIONS](https://github.com/username/appname/blob/master/INSTRUCTIONS.md) file
 
 ## Contact
-#### Developer/Company
-* Homepage: 
-* e-mail: 
-* Twitter: [@twitterhandle](https://twitter.com/twitterhandle "twitterhandle on twitter")
-* other communication/social media
+#### Bon Crowder
+* Homepage: [www.BonCrowder.com](http://boncrowder.com "Bon Crowder's Portfolio'"
+* e-mail: mathfour.com@gmail.com
+* Twitter: [@MathFour](https://twitter.com/mathfour "twitterhandle on twitter")
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=username&url=https://github.com/username/appname&title=appname&language=&tags=github&category=software) 
